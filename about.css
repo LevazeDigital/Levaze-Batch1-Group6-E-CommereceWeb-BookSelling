@@ -1,0 +1,319 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 200vh;
+}
+
+/* HEADER SECTION */
+.short-header {
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.short-title {
+    margin-top: 1vh;
+    color: white;
+
+}
+
+.short-links {
+    margin-top: 1vh;
+    display: flex;
+    color: white;
+}
+
+.short-links li {
+    list-style: none;
+    margin-right: 2vw;
+}
+
+.short-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.short-links a:hover {
+    font-size: 1.2rem;
+}
+
+
+.header {
+    background-color: white;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header li {
+    list-style: none;
+    font-size: 1.4em;
+
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.header a:hover {
+    font-size: 1.7rem;
+    text-shadow: 2px 2px blue;
+    color: white;
+    opacity: 120%;
+}
+
+.logo {
+    position: relative;
+    left: 3vw;
+    width: 10vw;
+    height: 10vh;
+    display: flex;
+}
+
+
+
+.logo a {
+    position: relative;
+    left: 3vw;
+    bottom: 5vh;
+    width: 10vw;
+    height: 20vh;
+    display: flex;
+}
+
+.logo a:hover {
+    transform: scale(1.2);
+}
+
+.menu-links {
+    position: relative;
+    right: 2vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-links a {
+    margin-left: 2vw;
+}
+
+.fa-solid.fa-magnifying-glass {
+    position: relative;
+    left: 28vw;
+    bottom: 4vh;
+    color: grey;
+}
+
+.SearchDiv {
+    width: 30vw;
+    height: 5vh;
+    position: relative;
+    left: 8vw;
+}
+
+.SearchDiv input {
+    width: 30vw;
+    height: 5vh;
+    border-radius: 10px;
+}
+
+/* HEADER SECTION END */
+
+
+
+
+
+
+
+
+
+
+
+/* Body Section*/
+
+/* ABOUT TITLE START */
+.heading-about {
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.au-h {
+    font-size: 5rem;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* ABOUT TITLE END */
+
+
+
+
+
+/* About Image Start */
+
+.heading-image {
+    width: 50vw;
+    height: 50vh;
+    background-color: blue;
+    position: relative;
+    left: 25vw;
+    top: 6vh;
+    border-radius: 80%;
+    box-shadow: 7px 7px 8px black;
+    background-image: url(https://i.pinimg.com/originals/00/56/76/005676b619ce505d6ef74e21e1092204.gif);
+    background-size: contain;
+}
+
+
+
+/* About Image End */
+
+
+
+
+
+
+
+/* Body About Start  */
+
+.body-about {
+    width: 90vw;
+    height: 70vh;
+    position: relative;
+    left: 5vw;
+    margin-top: 10vh;
+}
+
+.body-about p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.body-about h2 {
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    font-weight: 1000px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+/* Body About END  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Body Section End */
+
+
+
+
+
+
+
+
+/* Footer Section */
+
+.footer {
+    position: relative;
+    top: 85vh;
+    display: flex;
+    justify-content: space-around;
+    height: 70vh;
+    width: 100%;
+    background-color: white;
+}
+
+.footer li {
+    list-style: none;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.footer a:hover {
+    color: blue;
+}
+
+.foot-logo {
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.f1-h3 {
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+
+.foot-first {
+    display: flex;
+    flex-direction: column
+}
+
+.foot-first i {
+    margin-right: 1vw;
+}
+
+.foot-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.foot-second i {
+    margin-right: 1vw;
+}
+
+.foot-third {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.foot-third i {
+    margin-right: 1vw;
+}
+
+.f {
+    margin-top: 5vh;
+}
+
+.f a {
+    color: grey;
+}
+
+/* Footer Section End */

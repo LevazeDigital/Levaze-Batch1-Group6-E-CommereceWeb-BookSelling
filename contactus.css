@@ -1,0 +1,373 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 200vh;
+}
+
+/* HEADER SECTION */
+.short-header {
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.short-title {
+    margin-top: 1vh;
+    color: white;
+
+}
+
+.short-links {
+    margin-top: 1vh;
+    display: flex;
+    color: white;
+}
+
+.short-links li {
+    list-style: none;
+    margin-right: 2vw;
+}
+
+.short-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.short-links a:hover {
+    font-size: 1.2rem;
+}
+
+
+.header {
+    background-color: white;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header li {
+    list-style: none;
+    font-size: 1.4em;
+
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.header a:hover {
+    font-size: 1.7rem;
+    text-shadow: 2px 2px blue;
+    color: white;
+    opacity: 120%;
+}
+
+
+.logo {
+    position: relative;
+    left: 3vw;
+    width: 10vw;
+    height: 10vh;
+    display: flex;
+}
+
+.logo a {
+    position: relative;
+    left: 3vw;
+    bottom: 5vh;
+    width: 10vw;
+    height: 20vh;
+    display: flex;
+}
+
+.logo a:hover {
+    transform: scale(1.2);
+}
+
+.menu-links {
+    position: relative;
+    right: 2vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-links a {
+    margin-left: 2vw;
+}
+
+.fa-solid.fa-magnifying-glass {
+    position: relative;
+    left: 28vw;
+    bottom: 4vh;
+    color: grey;
+}
+
+.SearchDiv {
+    width: 30vw;
+    height: 5vh;
+    position: relative;
+    left: 8vw;
+}
+
+.SearchDiv input {
+    width: 30vw;
+    height: 5vh;
+    border-radius: 10px;
+}
+
+/* HEADER SECTION END */
+
+
+
+
+
+
+
+
+
+
+
+/* Body Section*/
+
+.heading-contactus {
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cu-h {
+    font-size: 5rem;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+
+
+/* Main Container START */
+
+.container-contact {
+    margin-left: 10vw;
+    margin-top: 10vh;
+    width: 80vw;
+    background-color: grey;
+    height: 70vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    border-radius: 30px;
+    height: 80vh;
+}
+
+.contact-image {
+    margin-top: 15vh;
+    border-radius: 15%;
+    width: 30vw;
+    height: 45vh;
+    /* background-color: blue; */
+    background-size: contain;
+    background-image: url(https://cdn.dribbble.com/users/6875924/screenshots/17027386/media/262483b0aaa67c5b074b0c9699379d8c.gif);
+}
+
+.get-in-touch {
+    text-align: center;
+    width: 30vw;
+    height: 80vh;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    /* padding: 1; */
+}
+
+.get-in-touch h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.input1 {
+    width: 30vw;
+    height: 10vh;
+    border-radius: 50px 50px;
+    border: none;
+    /* text-align: center; */
+}
+
+.input2 {
+    width: 30vw;
+    height: 20vh;
+    border-radius: 10px 10px;
+    border: none;
+    text-align: start;
+    padding: 5px;
+}
+
+.git-button {
+    position: relative;
+    left: 10vw;
+    height: 10vh;
+    border: none;
+    border-radius: 50px 50px;
+    width: 10vw;
+    background-color: rgb(165, 104, 223);
+    box-shadow: 6px 6px 5px black;
+    transition: 0.5s;
+}
+
+.git-button:hover {
+    transform: scale(1.2);
+}
+
+.contact-info {
+    height: 50vh;
+    width: 50vw;
+    /* background-color: red; */
+    margin-left: 23vw;
+    margin-top: 20vh;
+    text-align: center;
+    background-color: grey;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+
+.contact-info h1 {
+    color: white;
+    font-size: 3rem;
+    margin-top: 30px;
+}
+
+.contact-info h3 {
+    color: white;
+    margin-top: 20px;
+    font-size: 1.5rem
+}
+
+/* Main Container END */
+
+
+
+/* Body Section End */
+
+
+
+
+
+
+
+
+/* Footer Section */
+
+.footer {
+    position: relative;
+    top: 20vh;
+    display: flex;
+    justify-content: space-around;
+    height: 70vh;
+    width: 100%;
+    background-color: white;
+}
+
+.footer li {
+    list-style: none;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.footer a:hover {
+    color: blue;
+}
+
+.foot-logo {
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.f1-h3 {
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+
+.foot-first {
+    display: flex;
+    flex-direction: column
+}
+
+.foot-first i {
+    margin-right: 1vw;
+}
+
+.foot-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.foot-second i {
+    margin-right: 1vw;
+}
+
+.foot-third {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.foot-third i {
+    margin-right: 1vw;
+}
+
+.f {
+    margin-top: 5vh;
+}
+
+.f a {
+    color: grey;
+}
+
+/* Footer Section End */
+
+
+
+
+/* Google map APi */
+
+
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+#map {
+    height: 50vh;
+    width: 70vw;
+    background-color: black;
+}
+
+/* Google map api test */

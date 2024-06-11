@@ -1,0 +1,699 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 200vh;
+}
+
+/* HEADER SECTION */
+.short-header {
+    height: 5vh;
+    /* background-color: #962656; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.short-title {
+    margin-top: 1vh;
+    color: white;
+
+}
+
+.short-links {
+    margin-top: 1vh;
+    display: flex;
+    color: white;
+}
+
+.short-links li {
+    list-style: none;
+    margin-right: 2vw;
+}
+
+.short-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.short-links a:hover {
+    font-size: 1.2rem;
+
+}
+
+
+.header {
+    background-color: white;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header li {
+    list-style: none;
+    font-size: 1.4em;
+
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.header a:hover {
+    font-size: 1.7rem;
+    text-shadow: 2px 2px blue;
+    color: white;
+    opacity: 120%;
+}
+
+.logo {
+    position: relative;
+    left: 3vw;
+    /* top: 3vh; */
+    width: 8vw;
+    height: 15vh;
+    display: flex;
+}
+
+.logo img {
+    position: relative;
+    left: 3vw;
+    bottom: 2vh;
+    width: 10vw;
+    height: 20vh;
+    display: flex;
+}
+
+.menu-links {
+    position: relative;
+    right: 2vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-links a {
+    margin-left: 2vw;
+}
+
+.fa-solid.fa-magnifying-glass {
+    position: relative;
+    left: 28vw;
+    bottom: 4vh;
+    color: grey;
+}
+
+.SearchDiv {
+    width: 30vw;
+    height: 5vh;
+    position: relative;
+    left: 8vw;
+}
+
+.SearchDiv input {
+    width: 30vw;
+    height: 5vh;
+    border-radius: 10px;
+}
+
+/* HEADER SECTION END */
+
+
+
+/* Body Section*/
+
+/* Automatic Photo Frame START */
+.container1 {
+    position: relative;
+    width: 85vmin;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 35vh;
+    overflow: hidden;
+    border: 20px solid white;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30, 30, 30, 0.3);
+}
+
+.wrapper2 {
+    width: 100%;
+    display: flex;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    55% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    80% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+.apf-img {
+    width: 100%;
+}
+
+/* Automatic Photo Frame END */
+
+
+
+
+
+/* Slider Section */
+.middle-box {
+    margin-top: 5vh;
+}
+
+.services {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+
+    /* background-color:#E6E6FA; */
+}
+
+.servicesh1 {
+    margin-top: 2vh;
+    text-align: center;
+    /* background-color: #40E0D0; */
+    color: white;
+    transition: 0.5s;
+    text-shadow: 3px 3px 5px black;
+}
+
+.servicesh1:hover {
+    /* color:#E6E6FA; */
+    font-size: 2.5rem;
+
+}
+
+/* Start : Slider */
+.wrapper {
+    position: relative;
+    max-width: 940px;
+    width: 100%;
+    border-radius: 10%;
+    /* top: 100%; */
+}
+
+.arrow {
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%);
+    width: 30px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.arrow.prev {
+    left: -2vw;
+}
+
+.arrow.next {
+    right: -4vw;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 280px;
+    overflow-x: auto;
+    padding: 24px;
+    gap: 50px;
+    cursor: grab;
+    /* scroll-snap-type: x; */
+    scroll-padding-inline: 24;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.card-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.card-wrapper.grab {
+    cursor: grabbing;
+    user-select: none;
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.card-item {
+    background-color: white;
+    scroll-snap-align: start;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: 8px 8px 24px rgba(0, 0, 0, .25);
+}
+
+.card-item:hover {
+    transform: scale(1.07);
+}
+
+.card-item img {
+    width: 100%;
+    height: 200px;
+}
+
+/* .card-item:hover{
+    transform: scale(1.1);
+} */
+.card-info {
+    padding: 18px;
+    font-size: 20px;
+}
+
+.card-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: #222;
+    transition: 0.5s;
+}
+
+.card-title:hover {
+    color: blue;
+}
+
+.card-description {
+    color: #888;
+}
+
+/* Slider Section End */
+
+
+
+
+
+/* About Us main page  START*/
+
+.lower-box {
+    position: relative;
+    left: 15vw;
+    text-align: center;
+    width: 70vw;
+    height: 70vh;
+}
+
+.au-p {
+    font-size: 1.4rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.au-h {
+    font-size: 1.6rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 3px black;
+}
+
+.au-h2 {
+    font-size: 1.6rem;
+    color: white;
+    margin-top: 5vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 3px black;
+}
+
+.au-button {
+    margin-top: 2vh;
+    width: 10vw;
+    height: 10vh;
+    border-radius: 20px;
+    border-color: white;
+    box-shadow: 5px 5px 8px black;
+    border: none;
+    transition: 0.5s;
+}
+
+.au-button:hover {
+    border-radius: 40px;
+}
+
+.au-a {
+    text-decoration: none;
+    color: blue;
+    font-size: 1.5rem;
+    transition: 0.5s;
+    font-size: 1.4rem;
+    font-weight: 1000;
+}
+
+/* About Us main page END */
+
+/* Body Section End */
+
+
+
+
+
+
+
+
+/* Footer Section */
+
+.footer {
+    position: relative;
+    top: 20vh;
+    display: flex;
+    justify-content: space-around;
+    height: 70vh;
+    width: 100%;
+    background-color: white;
+}
+
+.footer li {
+    list-style: none;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.footer a:hover {
+    color: blue;
+}
+
+.foot-logo {
+    width: 20vw;
+    height: 20vh;
+    /* position: relative;
+    bottom: 10%; */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.f1-h3 {
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+
+.foot-first {
+    display: flex;
+    flex-direction: column
+}
+
+.foot-first i {
+    margin-right: 1vw;
+}
+
+.foot-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.foot-second i {
+    margin-right: 1vw;
+}
+
+.foot-third {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.foot-third i {
+    margin-right: 1vw;
+}
+
+.f {
+    margin-top: 5vh;
+}
+
+.f a {
+    color: grey;
+}
+
+/* Footer Section End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Slider 2 SEction */
+
+
+/* PRODUCTS */
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.product-category {
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.product-container {
+    padding: 0 10vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+    display: none;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.discount-tag {
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: blue;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+}
+
+.card-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.product-card:hover .card-btn {
+    opacity: 1;
+}
+
+.card-btn:hover {
+    background: blue;
+    color: #fff;
+}
+
+.product-info {
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+    color: white;
+}
+
+.product-brand {
+    text-transform: uppercase;
+    color: white;
+}
+
+.product-short-description {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.actual-price {
+    margin-left: 20px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.pre-btn,
+.nxt-btn {
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, black 100%);
+    cursor: pointer;
+    z-index: 8;
+}
+
+.pre-btn {
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn {
+    right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+    opacity: 0.4;
+    width: 100px;
+    height: 100px;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+    opacity: 1;
+}
+
+.collection-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.collection {
+    position: relative;
+}
+
+.collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* Slider 2 End */
